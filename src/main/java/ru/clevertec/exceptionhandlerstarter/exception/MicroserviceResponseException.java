@@ -6,6 +6,7 @@ import ru.clevertec.exceptionhandlerstarter.entity.IncorrectData;
 
 @Getter
 public class MicroserviceResponseException extends RuntimeException {
+
     private IncorrectData incorrectData;
     private HttpStatus status;
 

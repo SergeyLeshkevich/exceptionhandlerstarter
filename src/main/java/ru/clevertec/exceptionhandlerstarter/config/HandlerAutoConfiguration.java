@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import ru.clevertec.exceptionhandlerstarter.handler.NewsManagementSystemExceptionHandler;
 
 /**
- * Auto-configuration class for exception handling in the News Management System.
+ * Configuration class for exception handling in the News Management System.
  * Configures and initializes exception handling based on conditions.
  *
  * @author Sergey Leshkevich
@@ -39,9 +39,9 @@ public class HandlerAutoConfiguration {
      *
      * @return The NewsManagementSystemExceptionHandler bean.
      */
-//    @Bean
-//    @ConditionalOnMissingBean(NewsManagementSystemExceptionHandler.class)
-//    public NewsManagementSystemExceptionHandler newsServiceExceptionHandler() {
-//        return new NewsManagementSystemExceptionHandler();
-//    }
+    @Bean
+    @ConditionalOnMissingBean(NewsManagementSystemExceptionHandler.class)
+    public NewsManagementSystemExceptionHandler newsServiceExceptionHandler() {
+        return new NewsManagementSystemExceptionHandler();
+    }
 }

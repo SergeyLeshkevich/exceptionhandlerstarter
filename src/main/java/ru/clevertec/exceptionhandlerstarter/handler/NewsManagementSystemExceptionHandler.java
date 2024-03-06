@@ -161,6 +161,4 @@ public class NewsManagementSystemExceptionHandler {
         log.info("Returning status: {}, response: {}", status, incorrectData);
         return ResponseEntity.status(status).body(incorrectData);
     }
-
-
 }
